@@ -7,12 +7,12 @@
 #include "MC_Keypad_I2C.h"
 
 // WiFi
-const char* ssid = "daffa";
-const char* password = "12345678";
+const char* ssid = "asdf";
+const char* password = "asdasasd";
 
 // Telegram
-const char* botToken = "7774550900:AAGToHbXxSuRHFFTvumKsh9b804ZpCT5ulI";
-const char* groupChatID = "-4918317267";
+const char* botToken = "asdas:asdasd";
+const char* groupChatID = "-asdasd";
 
 // RFID
 #define SS_PIN 10
@@ -46,8 +46,8 @@ struct Mahasiswa {
 };
 
 Mahasiswa daftarMahasiswa[] = {
-  {"32383402", "7900493277", "M. Daffa Muis", "11210910000030"},
-  {"EABA4005", "6611732419", "M. RAFI HASAN", "11220910000087"}
+  {"32383402", "asdasd", "M. Daffa Muis", "11210910000030"},
+  {"EABA4005", "asdas", "M. RAFI HASAN", "11220910000087"}
 };
 
 const int jumlahMahasiswa = sizeof(daftarMahasiswa) / sizeof(Mahasiswa);
@@ -239,7 +239,7 @@ void resetState() {
 void sendToGoogleSheet(String uid, String nama, String nim) {
   if (WiFi.status() == WL_CONNECTED) {
     HTTPClient http;
-    String url = "https://script.google.com/macros/s/AKfycbybE4JSxMyl_j3w4DBAyfs2-dTiaBySMJBVE3VxeF6rLPY_IoFJlU0pfBPUA9JERTC6/exec"; // Ganti dengan URL kamu
+    String url = "https://script.google.com/macros/s/Aasdasd"; // Ganti dengan URL kamu
 
     http.begin(url);
     http.addHeader("Content-Type", "application/json");
